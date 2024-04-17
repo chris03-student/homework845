@@ -7,7 +7,7 @@ const router = new Router();
 
 router.get("/", (req, res) => {
   const welcome = {"greeting": "Hello World!"}
-  res.send(welcome)
+  res.send(welcome.greeting)
 })
 
 router.get("/sum/:number1/:number2", (req, res) => {
